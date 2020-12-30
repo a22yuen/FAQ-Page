@@ -1,0 +1,160 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  text-align: left;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: hsl(237, 12%, 33%);
+}
+
+h1 {
+  font-size: 1.75rem;
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+  margin-top: 3%;
+  margin-bottom: 6%;
+}
+
+h2, h3 {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+h3 {
+  display: none;
+}
+
+.bolded {
+  color: hsl(238, 29%, 16%);
+  font-weight: bold;
+}
+
+.hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.faq img {
+  margin-top: 8px;
+  float: right;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+hr {
+  color: hsl(240, 5%, 91%);
+  margin-top: 0;
+}
+
+.container-fluid {
+  background-color: white;
+  border-radius: 25px;
+  padding: 4% 8% 6%;
+  margin: auto;
+  width: 63%;
+  overflow: hidden;
+}
+
+.container {
+  padding-left: 0;
+}
+
+.bg {
+  position: absolute;
+  width: 220%;
+  z-index: 0;
+  bottom: -65%;
+  right: 30%;
+}
+
+.box {
+  position: absolute;
+  z-index: 5;
+  width: 12%;
+  left: 12.5%;
+  top: 40%;
+}
+
+.lady {
+  position: absolute;
+  z-index: 1;
+  width: 120%;
+  right: 30%;
+}
+
+.ladym{
+  display: none;
+}
+
+.bgm {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .container-fluid {
+    width: 90%;
+  }
+
+  .box {
+    position: absolute;
+    z-index: 5;
+    width: 12%;
+    left: calc(1% - 10px);
+    top: 45%;
+  }
+}
+
+@media (max-width: 575px) {
+  .title {
+    text-align: center;
+    margin-top: 50%;
+    font-size: 2rem;
+  }
+
+  .bg {
+    display: none;
+  }
+
+  .lady {
+    display: none;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .ladym {
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    width: 70%;
+    max-width: 300px;
+
+  }
+
+  .bgm {
+    display: block;
+    position: absolute;
+    left: 60px;
+    top: 130px;
+    width: 70%;
+    max-width: 300px;
+    object-fit: cover;
+  }
+}
+
+/* Attributions */
+.attribution {
+  margin-top: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
